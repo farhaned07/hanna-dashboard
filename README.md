@@ -1,16 +1,60 @@
-# React + Vite
+# Hanna Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Operational dashboard for **Hanna Care Intelligence**.
 
-Currently, two official plugins are available:
+This repo should be understood as part of the Hanna platform, not a standalone dashboard product.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Product role
 
-## React Compiler
+The dashboard exists to help care teams answer one question:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+> Who needs attention today?
 
-## Expanding the ESLint configuration
+It supports the post-visit care loop:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```text
+Visit → Documentation → Care plan → LINE follow-up → Risk signal → Nurse priority → Outcome report
+```
+
+## Current business direction
+
+Hanna is sold as **Care Intelligence**, not as a standalone AI scribe or isolated dashboard.
+
+The dashboard should support:
+
+- nurse priority review
+- patient follow-up visibility
+- risk signal review
+- care plan status
+- monthly leadership reporting
+- exception-based workflow
+
+## Locked packaging
+
+| Package | Price | Purpose |
+|---|---:|---|
+| Hanna Pilot | ฿60,000/month for 90 days | Prove the care loop with one clinic or department |
+| Hanna Care Intelligence | ฿85,000/month, billed annually | Annual department-level care intelligence system |
+| Hanna Enterprise | From ฿250,000/month, annual only | Multi-department, hospital group, or payer rollout |
+
+## Design standard
+
+Medical-grade calm:
+
+- quiet UI
+- clear patient priority
+- minimal clicking
+- no cluttered analytics theater
+- action-first nurse workflow
+- consistent Hanna identity across landing, scribe, LINE, and dashboard
+
+## Development
+
+```bash
+npm install
+npm run dev
+```
+
+## Product rule
+
+Every screen should reduce nurse workload or improve care visibility. If a feature does not support that, hide it, simplify it, or remove it.
