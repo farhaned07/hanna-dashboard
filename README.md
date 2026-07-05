@@ -1,52 +1,38 @@
 # Hanna Dashboard
 
-Operational dashboard for **Hanna Care Intelligence**.
-
-This repo should be understood as part of the Hanna platform, not a standalone dashboard product.
+Operational dashboard for **Hanna Care Intelligence**, designed to help care teams see follow-up activity, patient risk signals, and operational priorities after clinical visits.
 
 ## Product role
 
-The dashboard exists to help care teams answer one question:
+The dashboard exists to answer one operational question:
 
 > Who needs attention today?
 
 It supports the post-visit care loop:
 
 ```text
-Visit → Documentation → Care plan → LINE follow-up → Risk signal → Nurse priority → Outcome report
+Visit → Documentation → Care plan → Follow-up → Risk signal → Care-team priority → Outcome visibility
 ```
 
-## Current business direction
+## What the dashboard supports
 
-Hanna is sold as **Care Intelligence**, not as a standalone AI scribe or isolated dashboard.
-
-The dashboard should support:
-
-- nurse priority review
+- care-team priority review
 - patient follow-up visibility
 - risk signal review
-- care plan status
-- monthly leadership reporting
+- care-plan status
 - exception-based workflow
-
-## Locked packaging
-
-| Package | Price | Purpose |
-|---|---:|---|
-| Hanna Pilot | ฿60,000/month for 90 days | Prove the care loop with one clinic or department |
-| Hanna Care Intelligence | ฿85,000/month, billed annually | Annual department-level care intelligence system |
-| Hanna Enterprise | From ฿250,000/month, annual only | Multi-department, hospital group, or payer rollout |
+- simple operational reporting
 
 ## Design standard
 
-Medical-grade calm:
+The interface should feel calm, clinical, and action-first:
 
 - quiet UI
 - clear patient priority
 - minimal clicking
 - no cluttered analytics theater
-- action-first nurse workflow
-- consistent Hanna identity across landing, scribe, LINE, and dashboard
+- focused care-team workflow
+- consistent Hanna identity across the platform
 
 ## Development
 
@@ -55,6 +41,6 @@ npm install
 npm run dev
 ```
 
-## Product rule
+## Portfolio note
 
-Every screen should reduce nurse workload or improve care visibility. If a feature does not support that, hide it, simplify it, or remove it.
+This repository demonstrates forward-deployed product execution for healthcare operations: translating a care-team workflow into a dashboard that supports daily decision-making.
